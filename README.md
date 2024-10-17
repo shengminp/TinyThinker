@@ -90,19 +90,13 @@ python finetune.py \
       --learning_rate $lr \
       --interval $interval
 ```
-*$model_name:* model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
-
-*$data_name:* dataset name for training, only support 'csqa', 'obqa', 'strategyqa'
-
-*$stage_type:* stage type for training, only support 'summarize', 'recall_summarize', 'analyze_summarize', 'recall_analyze_summarize'
-
-*$batch_size:* batch size for training
-
-*$num_epochs:* epochs number for training
-
-*$lr:* learning rate for training
-
-*$interval:* interval value for each stage in TinyThinker
+- *$model_name:* model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
+- *$data_name:* dataset name for training, only support 'csqa', 'obqa', 'strategyqa'
+- *$stage_type:* stage type for training, only support 'summarize', 'recall_summarize', 'analyze_summarize', 'recall_analyze_summarize'
+- *$batch_size:* batch size for training
+- *$num_epochs:* epochs number for training
+- *$lr:* learning rate for training
+- *$interval:* interval value for each stage in TinyThinker
 
 #### **Phase-2: Self-Reflection**
 In this phase, we refine the learned reasoning by self-generated data.
@@ -117,19 +111,13 @@ python dpo.py \
       --per_gpu_batch_size $per_gpu_batch_size \
       --learning_rate $learning_rate
 ```
-*$base_name:* model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
-
-*$ref_model:* checkpoint path of reference model
-
-*$data_name:* dataset name for training, only support 'csqa', 'obqa', 'strategyqa'
-
-*$stage_type:* stage type for training, only support 'recall', 'analyze', 'recall_analyze'
-
-*$dpo_iter:* current timestamp of iteration
-
-*$per_gpu_batch_size:* batch size for training
-
-*$learning_rate:* learning rate for training
+- *$base_name:* model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
+- *$ref_model:* checkpoint path of reference model
+- *$data_name:* dataset name for training, only support 'csqa', 'obqa', 'strategyqa'
+- *$stage_type:* stage type for training, only support 'recall', 'analyze', 'recall_analyze'
+- *$dpo_iter:* current timestamp of iteration
+- *$per_gpu_batch_size:* batch size for training
+- *$learning_rate:* learning rate for training
 
 This is the basic file for run single iteration of DPO, if you want to run iterative dpo please use "run_dpo.sh".
 
@@ -147,25 +135,16 @@ python generate.py \
     --generation_file $generation_file \
     --generation_times $generation_times
 ```
-*$base_name:* model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
-
-*$data_name:* dataset name for inference, only support 'csqa', 'obqa', 'strategyqa'
-
-*$type_name:* phase type for inference, only support 'sft', 'dpo'
-
-*$stage_type:* stage type for inference, only support 'recall', 'analyze', 'summarize', 'recall_summarize', 'analyze_summarize', 'recall_analyze', 'recall_analyze_summarize'
-
-*$dpo_iter:* current timestamp of iteration
-
-*$checkpoint_path:* path of checkpoint to run inference
-
-*$batch_size:* batch size for inference
-
-*$generation_type:* generation type for inference, only support 'greedy', 'random'
-
-*$generation_file:* generation file for inference, only support 'test', 'dpo'
-
-*$generation_times:* generation times for inference
+- *$base_name:* model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
+- *$data_name:* dataset name for inference, only support 'csqa', 'obqa', 'strategyqa'
+- *$type_name:* phase type for inference, only support 'sft', 'dpo'
+- *$stage_type:* stage type for inference, only support 'recall', 'analyze', 'summarize', 'recall_summarize', 'analyze_summarize', 'recall_analyze', 'recall_analyze_summarize'
+- *$dpo_iter:* current timestamp of iteration
+- *$checkpoint_path:* path of checkpoint to run inference
+- *$batch_size:* batch size for inference
+- *$generation_type:* generation type for inference, only support 'greedy', 'random'
+- *$generation_file:* generation file for inference, only support 'test', 'dpo'
+- *$generation_times:* generation times for inference
 
 
 ## :page_facing_up: License
