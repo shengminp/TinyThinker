@@ -1,21 +1,26 @@
-# TinyThinker
+# :star2:TinyThinker
 
-Official code for "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"
+Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"**
 
-## Table of Contents
+## :bookmark_tabs:Table of Contents
 
-- [Getting Started](#getting-started)
-- [Running TinyThinker](#running-tinythinker)
-- [License](#license)
+- :hammer_and_wrench:[Getting Started](#getting-started)
+  - :clipboard:[Prerequisites](#prerequisites)
+  - :gear:[Installing](#installing)
+- :rocket:[Running TinyThinker](#running-tinythinker)
+  - :memo:Prompt Engineering
+  - :dart:Train TinyThinker
+  - :hourglass_flowing_sand:Inference 
+- :page_facing_up:[License](#license)
 
-## Getting Started
+## :hammer_and_wrench:Getting Started
 
-### Prerequisites
+### :clipboard:Prerequisites
 
-* Pytorch version == 1.8.0
-* Python version == 3.7.x
+* Pytorch version == 2.1.0
+* Python version == 3.10.x
 
-### Installing
+### :gear:Installing
 
 Creating an environment with commands.
 
@@ -63,11 +68,11 @@ After the overall installation, make sure the directory of the project is as fol
     ├── train_simcse.py
     └── README.md
 
-## Running TinyThinker
+## :rocket:Running TinyThinker
 
 In the following code, the values that can be used in {PROPERTY} are "drd2" and "qed".
 
-### Preprocess the raw dataset to binarized dataset and generate vocabulary
+### :file_folder:Preprocess the raw dataset to binarized dataset and generate vocabulary
 
 ```
 python preprocess.py \
@@ -146,6 +151,6 @@ fairseq-generate \
     --batch-size 400
 ```
 
-## License
+## :page_facing_up:License
 
-[MIT](LICENSE) © Shengmin Piao & Jonghwan Choi.
+[MIT](LICENSE) © Shengmin Piao
