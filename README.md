@@ -4,7 +4,7 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 
 ## :bookmark_tabs: Table of Contents
 
-- :hammer_and_wrench: [Getting Started](#hammer-and-wrench-getting-started)
+- :hammer_and_wrench: [Getting Started](#hammer_and_wrench-getting-started)
   - :clipboard: [Prerequisites](#clipboard-prerequisites)
   - :gear: [Installing](#gear-installing)
 - :rocket: [Running TinyThinker](#rocket-running-tinythinker)
