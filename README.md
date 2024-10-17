@@ -7,7 +7,7 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 - :hammer_and_wrench:[Getting Started](#getting-started)
   - :clipboard:[Prerequisites](#prerequisites)
   - :gear:[Installing](#installing)
-- :rocket:[Running TinyThinker](#-running-tinythinker)
+- :rocket:[Running TinyThinker](#running-tinythinker)
   - :memo:Prompt Engineering
   - :dart:Train TinyThinker
   - :hourglass_flowing_sand:Inference 
@@ -68,7 +68,7 @@ After the overall installation, make sure the directory of the project is as fol
     ├── train_simcse.py
     └── README.md
 
-## :rocket:Running TinyThinker
+## :rocket: Running TinyThinker
 
 In the following code, the values that can be used in {PROPERTY} are "drd2" and "qed".
 
