@@ -22,7 +22,7 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 
 ### :gear: Installing
 
-Creating an environment with commands.
+To set up the environment, use the following commands:
 
 ```
 git clone https://github.com/shengminp/TinyThinker.git
@@ -30,7 +30,7 @@ cd TinyThinker
 conda env create -f environment.yml
 ```
 
-After the overall installation, make sure the directory of the project is as follows:
+After installation, your project directory structure should look like this:
     
     .
     ├── datasets
@@ -68,17 +68,16 @@ After the overall installation, make sure the directory of the project is as fol
 ## :rocket: Running TinyThinker
 
 ### :memo: Prompt Engineering
-1. Download dataset from corresponding official site and place it at location "./datasets/DATASET/original".
-2. Run "./datasets/Prompt Engineering.ipynb" to prepare the prompt for each dataset.
-3. Run ".datasets/openai_request.py" to request OpenAI generate reponse for the prepared prompt.
-   - Due to the reason that the generated response might have some error, continue the step 2 and 3 if you have enough budget
-   - The continue step is detailed in "./datasets/Prompt Engineering.ipynb"
-4. After 3, the final version for training is located at "./datasets/DATASET/final"
-5. Run "./datasets/Prepare Ablation.py" to prepare dataset for ablation study, result will be located at "./datasets/DATASET/final"
-
+1. Download the dataset from its official site and place it under ./datasets/DATASET/original.
+2. Run ./datasets/Prompt Engineering.ipynb to prepare prompts for the dataset.
+3. Execute ./datasets/openai_request.py to generate responses from OpenAI:
+   - If the generated responses contain errors, repeat steps 2 and 3 as needed (see details in Prompt Engineering.ipynb).
+4. Once completed, the prepared dataset will be located at ./datasets/DATASET/final.
+5. Use Prepare Ablation.ipynb to prepare the ablation study dataset, with results saved at ./datasets/DATASET/final.
+   
 ### :dart: Train TinyThinker
 #### **Phase-1: Reasoning Acquisition**
-In this phase, we finetune a T5 model to learn how to learn reasoning by three-stage process.
+In this phase, a T5 model is fine-tuned using a three-stage process. Run the following command:
 ```
 python finetune.py \
       --base_model $model_name \
@@ -90,16 +89,13 @@ python finetune.py \
       --learning_rate $lr \
       --interval $interval
 ```
-- **$model_name:** model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
-- **$data_name:** dataset name for training, only support 'csqa', 'obqa', 'strategyqa'
-- **$stage_type:** stage type for training, only support 'summarize', 'recall_summarize', 'analyze_summarize', 'recall_analyze_summarize'
-- **$batch_size:** batch size for training
-- **$num_epochs:** epochs number for training
-- **$lr：** learning rate for training
-- **$interval:** interval value for each stage in TinyThinker
+- **$model_name:** Model name from Huggingface (google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b).
+- **$data_name:** Dataset name (csqa, obqa, strategyqa).
+- **$stage_type:** Training stage (summarize, recall_summarize, analyze_summarize, recall_analyze_summarize).
+- **$interval:** Interval value between stages.
 
 #### **Phase-2: Self-Reflection**
-In this phase, we refine the learned reasoning by self-generated data.
+In this phase, we refine the reasoning through self-generated data using DPO. Run:
 ```
 python dpo.py \
       --base_model $base_model \
@@ -111,17 +107,16 @@ python dpo.py \
       --per_gpu_batch_size $per_gpu_batch_size \
       --learning_rate $learning_rate
 ```
-- **$base_name:** model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
-- **$ref_model:** checkpoint path of reference model
-- **$data_name:** dataset name for training, only support 'csqa', 'obqa', 'strategyqa'
-- **$stage_type:** stage type for training, only support 'recall', 'analyze', 'recall_analyze'
-- **$dpo_iter:** current timestamp of iteration
-- **$per_gpu_batch_size:** batch size for training
-- **$learning_rate:** learning rate for training
+- **$base_name:** Model name (google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b).
+- **$ref_model:** Path to the reference model checkpoint.
+- **$data_name:** Dataset name (csqa, obqa, strategyqa).
+- **$stage_type:** Training stage (recall, analyze, recall_analyze).
+- **$dpo_iter:** Current iteration timestamp.
 
-This is the basic file for run single iteration of DPO, if you want to run iterative dpo please use "run_dpo.sh".
+For iterative DPO, use the run_dpo.sh script.
 
 ### :hourglass_flowing_sand: Inference
+Use the following command to generate inferences:
 ```
 python generate.py \
     --base_model $base_model \
@@ -135,18 +130,15 @@ python generate.py \
     --generation_file $generation_file \
     --generation_times $generation_times
 ```
-- **$base_name:** model name from Huggingface, only support 'google-t5/t5-small', 'google-t5/t5-base', 'google-t5/t5-large', 'google-t5/t5-3b', 'google-t5/t5-11b'
-- **$data_name:** dataset name for inference, only support 'csqa', 'obqa', 'strategyqa'
-- **$type_name:** phase type for inference, only support 'sft', 'dpo'
-- **$stage_type:** stage type for inference, only support 'recall', 'analyze', 'summarize', 'recall_summarize', 'analyze_summarize', 'recall_analyze', 'recall_analyze_summarize'
-- **$dpo_iter:** current timestamp of iteration
-- **$checkpoint_path:** path of checkpoint to run inference
-- **$batch_size:** batch size for inference
-- **$generation_type:** generation type for inference, only support 'greedy', 'random'
-- **$generation_file:** generation file for inference, only support 'test', 'dpo'
-- **$generation_times:** generation times for inference
-
+- **$base_name:** Model name (google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b).
+- **$data_name:** Dataset name (csqa, obqa, strategyqa).
+- **$type_name:** Phase type (sft, dpo).
+- **$stage_type:** Inference stage (recall, analyze, summarize, recall_summarize, analyze_summarize, recall_analyze, recall_analyze_summarize).
+- **$dpo_iter:** Iteration timestamp.
+- **$generation_type:** Generation type (greedy, random).
+- **$generation_file:** File type (test, dpo).
+- **$generation_times:** Number of generation attempts.
 
 ## :page_facing_up: License
 
-[MIT](LICENSE) © Shengmin Piao
+This project is licensed under the [MIT](LICENSE) © Shengmin Piao
