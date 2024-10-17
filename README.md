@@ -2,25 +2,25 @@
 
 Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"**
 
-## :bookmark_tabs:Table of Contents
+## :bookmark_tabs: Table of Contents
 
 - :hammer_and_wrench: [Getting Started](#getting-started)
   - :clipboard: [Prerequisites](#prerequisites)
   - :gear: [Installing](#installing)
 - :rocket: [Running TinyThinker](#running-tinythinker)
-  - :memo: Prompt Engineering
-  - :dart: Train TinyThinker
-  - :hourglass_flowing_sand: Inference 
+  - :memo: [Prompt Engineering](#prompt-engineering)
+  - :dart: [Train TinyThinker](#train-tinythinker)
+  - :hourglass_flowing_sand: [Inference](#inference)
 - :page_facing_up: [License](#license)
 
-## :hammer_and_wrench:Getting Started
+## :hammer_and_wrench: Getting Started
 
-### :clipboard:Prerequisites
+### :clipboard: Prerequisites
 
 * Pytorch version == 2.1.0
 * Python version == 3.10.x
 
-### :gear:Installing
+### :gear: Installing
 
 Creating an environment with commands.
 
@@ -72,7 +72,7 @@ After the overall installation, make sure the directory of the project is as fol
 
 In the following code, the values that can be used in {PROPERTY} are "drd2" and "qed".
 
-### :file_folder:Preprocess the raw dataset to binarized dataset and generate vocabulary
+### :file_folder: Preprocess the raw dataset to binarized dataset and generate vocabulary
 
 ```
 python preprocess.py \
