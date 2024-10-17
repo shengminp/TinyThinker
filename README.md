@@ -5,7 +5,6 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 ## :bookmark_tabs: Table of Contents
 
 - :hammer_and_wrench: [Getting Started](#hammer_and_wrench-getting-started)
-  - :clipboard: [Prerequisites](#clipboard-prerequisites)
   - :gear: [Installing](#gear-installing)
 - :rocket: [Running TinyThinker](#rocket-running-tinythinker)
   - :memo: [Prompt Engineering](#memo-prompt-engineering)
@@ -14,11 +13,6 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 - :page_facing_up: [License](#page_facing_up-license)
 
 ## :hammer_and_wrench: Getting Started
-
-### :clipboard: Prerequisites
-
-* Pytorch version == 2.1.0
-* Python version == 3.10.x
 
 ### :gear: Installing
 
