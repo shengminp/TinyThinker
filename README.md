@@ -7,7 +7,7 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 - :hammer_and_wrench:[Getting Started](#getting-started)
   - :clipboard:[Prerequisites](#prerequisites)
   - :gear:[Installing](#installing)
-- :rocket:[Running TinyThinker](#running-tinythinker)
+- :rocket:[Running TinyThinker](#-running-tinythinker)
   - :memo:Prompt Engineering
   - :dart:Train TinyThinker
   - :hourglass_flowing_sand:Inference 
