@@ -68,12 +68,12 @@ After installation, your project directory structure should look like this:
 ## :rocket: Running TinyThinker
 
 ### :memo: Prompt Engineering
-1. Download the dataset from its official site and place it under ./datasets/DATASET/original.
-2. Run ./datasets/Prompt Engineering.ipynb to prepare prompts for the dataset.
-3. Execute ./datasets/openai_request.py to generate responses from OpenAI:
-   - If the generated responses contain errors, repeat steps 2 and 3 as needed (see details in Prompt Engineering.ipynb).
-4. Once completed, the prepared dataset will be located at ./datasets/DATASET/final.
-5. Use Prepare Ablation.ipynb to prepare the ablation study dataset, with results saved at ./datasets/DATASET/final.
+1. Download the dataset from its official site and place it under ```./datasets/DATASET/original```.
+2. Run ```./datasets/Prompt Engineering.ipynb``` to prepare prompts for the dataset.
+3. Execute ```./datasets/openai_request.py``` to generate responses from OpenAI:
+   - If the generated responses contain errors, repeat steps 2 and 3 as needed (see details in ```Prompt Engineering.ipynb```).
+4. Once completed, the prepared dataset will be located at ```./datasets/DATASET/final```.
+5. Use ```Prepare Ablation.ipynb``` to prepare the ablation study dataset, with results saved at ```./datasets/DATASET/final```.
    
 ### :dart: Train TinyThinker
 #### **Phase-1: Reasoning Acquisition**
@@ -113,7 +113,7 @@ python dpo.py \
 - **$stage_type:** Training stage ```(recall, analyze, recall_analyze)```.
 - **$dpo_iter:** Current iteration timestamp.
 
-For iterative DPO, use the run_dpo.sh script.
+For iterative DPO, use the ```run_dpo.sh``` script.
 
 ### :hourglass_flowing_sand: Inference
 Use the following command to generate inferences:
