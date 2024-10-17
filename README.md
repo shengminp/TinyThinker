@@ -118,6 +118,6 @@ python preprocess.py \
 ```
 
 
-## :page_facing_up:License
+## :page_facing_up: License
 
 [MIT](LICENSE) © Shengmin Piao
