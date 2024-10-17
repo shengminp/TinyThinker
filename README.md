@@ -35,9 +35,9 @@ After installation, your project directory structure should look like this:
     .
     ├── datasets
     │   ├── csqa
-    |   │   ├── final                                # Dataset for training TinyThinker
-    |   │   ├── original                             # Original dataset  
-    │   |   └── prompt                               # Designed prompt for prompt engineering
+    |   │   ├── final                               # Dataset for training TinyThinker
+    |   │   ├── original                            # Original dataset  
+    │   |   └── prompt                              # Designed prompt for prompt engineering
     │   ├── obqa
     |   │   ├── final
     |   │   ├── original
@@ -46,23 +46,23 @@ After installation, your project directory structure should look like this:
     |   │   ├── final
     |   │   ├── original
     │   |   └── prompt
-    │   ├── openai_request.py                         # Sends requests and collects responses from OpenAI
-    │   ├── Prepare Ablation.ipynb                    # Prepares data for ablation study
-    │   ├── Prompt Engineering.ipynb                  # Prepares dataset for training
-    │   └── request.json                              # Instructions for prompts
-    ├── models                                        # Stores model checkpoints
-    ├── results                                       # Saves generated results during inference
+    │   ├── openai_request.py                       # Sends requests and collects responses from OpenAI
+    │   ├── Prepare Ablation.ipynb                  # Prepares data for ablation study
+    │   ├── Prompt Engineering.ipynb                # Prepares dataset for training
+    │   └── request.json                            # Instructions for prompts
+    ├── models                                      # Stores model checkpoints
+    ├── results                                     # Saves generated results during inference
     ├── scripts
     │   ├── utils
     |   │   ├── __init__.py
-    |   │   ├── config.py                             # Configuration file for TinyThinker
-    │   |   └── trainer.py                            # Customized Huggingface trainer
-    │   ├── dpo.py                                    # Manages DPO runs
-    │   ├── finetune.py                               # Handles TinyThinker training
-    │   ├── generate.py                               # Handles data generation
-    │   ├── run_dpo.sh                                # Script for iterative DPO process
-    │   ├── run_finetune.sh                           # Script for training
-    │   └── run_generate.sh                           # Script for data generation
+    |   │   ├── config.py                           # Configuration file for TinyThinker
+    │   |   └── trainer.py                          # Customized Huggingface trainer
+    │   ├── dpo.py                                  # Manages DPO runs
+    │   ├── finetune.py                             # Handles TinyThinker training
+    │   ├── generate.py                             # Handles data generation
+    │   ├── run_dpo.sh                              # Script for iterative DPO process
+    │   ├── run_finetune.sh                         # Script for training
+    │   └── run_generate.sh                         # Script for data generation
     └── README.md
 
 ## :rocket: Running TinyThinker
