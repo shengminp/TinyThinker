@@ -89,9 +89,9 @@ python finetune.py \
       --learning_rate $lr \
       --interval $interval
 ```
-- **$model_name:** Model name from Huggingface (google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b).
-- **$data_name:** Dataset name (csqa, obqa, strategyqa).
-- **$stage_type:** Training stage (summarize, recall_summarize, analyze_summarize, recall_analyze_summarize).
+- **$model_name:** Model name from Huggingface ```(google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b)```.
+- **$data_name:** Dataset name ```(csqa, obqa, strategyqa)```.
+- **$stage_type:** Training stage ```(summarize, recall_summarize, analyze_summarize, recall_analyze_summarize)```.
 - **$interval:** Interval value between stages.
 
 #### **Phase-2: Self-Reflection**
@@ -107,10 +107,10 @@ python dpo.py \
       --per_gpu_batch_size $per_gpu_batch_size \
       --learning_rate $learning_rate
 ```
-- **$base_name:** Model name (google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b).
+- **$base_name:** Model name ```(google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b)```.
 - **$ref_model:** Path to the reference model checkpoint.
-- **$data_name:** Dataset name (csqa, obqa, strategyqa).
-- **$stage_type:** Training stage (recall, analyze, recall_analyze).
+- **$data_name:** Dataset name ```(csqa, obqa, strategyqa)```.
+- **$stage_type:** Training stage ```(recall, analyze, recall_analyze)```.
 - **$dpo_iter:** Current iteration timestamp.
 
 For iterative DPO, use the run_dpo.sh script.
@@ -130,13 +130,13 @@ python generate.py \
     --generation_file $generation_file \
     --generation_times $generation_times
 ```
-- **$base_name:** Model name (google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b).
-- **$data_name:** Dataset name (csqa, obqa, strategyqa).
-- **$type_name:** Phase type (sft, dpo).
-- **$stage_type:** Inference stage (recall, analyze, summarize, recall_summarize, analyze_summarize, recall_analyze, recall_analyze_summarize).
+- **$base_name:** Model name ```(google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b)```.
+- **$data_name:** Dataset name ```(csqa, obqa, strategyqa)```.
+- **$type_name:** Phase type ```(sft, dpo)```.
+- **$stage_type:** Inference stage ```(recall, analyze, summarize, recall_summarize, analyze_summarize, recall_analyze, recall_analyze_summarize)```.
 - **$dpo_iter:** Iteration timestamp.
-- **$generation_type:** Generation type (greedy, random).
-- **$generation_file:** File type (test, dpo).
+- **$generation_type:** Generation type ```(greedy, random)```.
+- **$generation_file:** File type ```(test, dpo)```.
 - **$generation_times:** Number of generation attempts.
 
 ## :page_facing_up: License
