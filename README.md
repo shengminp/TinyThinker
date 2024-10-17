@@ -72,14 +72,14 @@ After installation, your project directory structure should look like this:
 In this phase, a T5 model is fine-tuned using a three-stage process. Run the following command:
 ```
 python finetune.py \
-      --base_model $model_name \
-      --data_name $data_name \
-      --training_type sft \
-      --stage_type $stage_type \
-      --per_gpu_batch_size $batch_size \
-      --num_train_epochs $num_epochs \
-      --learning_rate $lr \
-      --interval $interval
+    --base_model $model_name \
+    --data_name $data_name \
+    --training_type sft \
+    --stage_type $stage_type \
+    --per_gpu_batch_size $batch_size \
+    --num_train_epochs $num_epochs \
+    --learning_rate $lr \
+    --interval $interval
 ```
 - **$model_name:** Model name from Huggingface ```(google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b)```.
 - **$data_name:** Dataset name ```(csqa, obqa, strategyqa)```.
@@ -91,14 +91,14 @@ python finetune.py \
 In this phase, we refine the reasoning through self-generated data using DPO. Run:
 ```
 python dpo.py \
-      --base_model $base_model \
-      --ref_model $ref_model \
-      --data_name $data_name \
-      --training_type dpo \
-      --stage_type $stage_type \
-      --dpo_iter $dpo_iter \
-      --per_gpu_batch_size $per_gpu_batch_size \
-      --learning_rate $learning_rate
+    --base_model $base_model \
+    --ref_model $ref_model \
+    --data_name $data_name \
+    --training_type dpo \
+    --stage_type $stage_type \
+    --dpo_iter $dpo_iter \
+    --per_gpu_batch_size $per_gpu_batch_size \
+    --learning_rate $learning_rate
 ```
 - **$base_name:** Model name ```(google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b)```.
 - **$ref_model:** Path to the reference model checkpoint.
