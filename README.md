@@ -4,14 +4,14 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 
 ## :bookmark_tabs: Table of Contents
 
-- :hammer_and_wrench: [Getting Started](#getting-started)
-  - :clipboard: [Prerequisites](#prerequisites)
-  - :gear: [Installing](#installing)
+- :hammer_and_wrench: [Getting Started](#hammer-and-wrench-getting-started)
+  - :clipboard: [Prerequisites](#clipboard-prerequisites)
+  - :gear: [Installing](#gear-installing)
 - :rocket: [Running TinyThinker](#rocket-running-tinythinker)
-  - :memo: [Prompt Engineering](#prompt-engineering)
-  - :dart: [Train TinyThinker](#train-tinythinker)
-  - :hourglass_flowing_sand: [Inference](#inference)
-- :page_facing_up: [License](#license)
+  - :memo: [Prompt Engineering](#memo-prompt-engineering)
+  - :dart: [Train TinyThinker](#dart-train-tinythinker)
+  - :hourglass_flowing_sand: [Inference](#hourglass-flowing-sand-inference)
+- :page_facing_up: [License](#page-facing-up-license)
 
 ## :hammer_and_wrench: Getting Started
 
