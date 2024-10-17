@@ -76,7 +76,7 @@ After installation, your project directory structure should look like this:
 5. Use ```Prepare Ablation.ipynb``` to prepare the ablation study dataset, with results saved at ```./datasets/DATASET/final```.
    
 ### :dart: Train TinyThinker
-#### **Phase-1: Reasoning Acquisition**
+**Phase-1: Reasoning Acquisition**
 In this phase, a T5 model is fine-tuned using a three-stage process. Run the following command:
 ```
 python finetune.py \
@@ -94,7 +94,7 @@ python finetune.py \
 - **$stage_type:** Training stage ```(summarize, recall_summarize, analyze_summarize, recall_analyze_summarize)```.
 - **$interval:** Interval value between stages.
 
-#### **Phase-2: Self-Reflection**
+**Phase-2: Self-Reflection**
 In this phase, we refine the reasoning through self-generated data using DPO. Run:
 ```
 python dpo.py \
