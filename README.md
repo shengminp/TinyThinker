@@ -5,7 +5,6 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 ## :bookmark_tabs: Table of Contents
 
 - :hammer_and_wrench: [Getting Started](#hammer_and_wrench-getting-started)
-  - :gear: [Installing](#gear-installing)
 - :rocket: [Running TinyThinker](#rocket-running-tinythinker)
   - :memo: [Prompt Engineering](#memo-prompt-engineering)
   - :dart: [Train TinyThinker](#dart-train-tinythinker)
@@ -13,8 +12,6 @@ Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Kn
 - :page_facing_up: [License](#page_facing_up-license)
 
 ## :hammer_and_wrench: Getting Started
-
-### :gear: Installing
 
 To set up the environment, use the following commands:
 
@@ -71,6 +68,7 @@ After installation, your project directory structure should look like this:
    
 ### :dart: Train TinyThinker
 **Phase-1: Reasoning Acquisition**
+
 In this phase, a T5 model is fine-tuned using a three-stage process. Run the following command:
 ```
 python finetune.py \
@@ -89,6 +87,7 @@ python finetune.py \
 - **$interval:** Interval value between stages.
 
 **Phase-2: Self-Reflection**
+
 In this phase, we refine the reasoning through self-generated data using DPO. Run:
 ```
 python dpo.py \
