@@ -1,0 +1,82 @@
+[
+  {
+    "Q": "Do hamsters provide food for any animals?",
+    "Options": "A. yes, B. no",
+    "Key Information": "Hamsters serve as prey for other animals in the food chain.",
+    "Explanations": [
+      "A is correct. Because hamsters are prey for various predators, reflecting their role in the food chain and ecosystem interconnectedness.",
+      "B is incorrect. Because denying this ignores the reality of food chain dynamics and hamsters' role in supporting habitat biodiversity."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Could Brooke Shields succeed at University of Pennsylvania?",
+    "Options": "A. yes, B. no",
+    "Key Information": "The potential for success of an individual, Brooke Shields, at a specific academic institution, University of Pennsylvania, implying considerations of her capabilities, ambition, and the university's environment.",
+    "Explanations": [
+      "A is correct. Because Brooke Shields' academic and career accomplishments suggest she would likely succeed at the University of Pennsylvania, reflecting her capability to thrive in demanding environments.",
+      "B is incorrect. Because there's ample evidence of Brooke Shields' ability and ambition, making her success at the University of Pennsylvania plausible, thus dismissing this ignores her proven capabilities."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Hydrogen's atomic number squared exceeds number of Spice Girls?",
+    "Options": "A. yes, B. no",
+    "Key Information": "Hydrogen's atomic number is 1, and the Spice Girls group consists of 5 members.",
+    "Explanations": [
+      "A is incorrect. Because hydrogen's atomic number squared (1) does not exceed the Spice Girls' member count (5).",
+      "B is correct. Because since hydrogen's atomic number squared equals 1, it is less than the Spice Girls' 5 members, aligning with the key concept."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Is it common to see frost during some college commencements?",
+    "Options": "A. yes, B. no",
+    "Key Information": "College commencements in certain regions or during certain times of the year might coincide with colder weather conditions, which can lead to the formation of frost.",
+    "Explanations": [
+      "A is correct. Because frost can occur during college commencements in colder climates or seasonal transitions, reflecting geographic and seasonal weather variations.",
+      "B is incorrect. Because disregarding frost ignores the reality of seasonal cold weather affecting commencements in many regions."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Could a llama birth twice during War in Vietnam (1945-46)?",
+    "Options": "A. yes, B. no",
+    "Key Information": "The natural gestation period of a llama is approximately 11 months, and the specific duration of the War in Vietnam stated to be 6 months.",
+    "Explanations": [
+      "A is incorrect. Because the llama's 11-month gestation period surpasses the 6-month Vietnam War duration, making two births impossible within this timeframe.",
+      "B is correct. Because given the llama's gestation period and the war's duration, it's biologically impossible for a llama to give birth twice during the conflict."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Would a pear sink in water?",
+    "Options": "A. yes, B. no",
+    "Key Information": "The density of pear would determine if it sinks or floats in water.",
+    "Explanations": [
+      "A is incorrect. Because pears float due to a density less than water, attributed to their fibrous and airy composition.",
+      "B is correct. Because pears float in water because of their air-filled fibrous structure, making them less dense than water."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Is Albany, Georgia the most populous US Albany?",
+    "Options": "A. yes, B. no",
+    "Key Information": "Comparing the population size between Albany, Georgia and Albany, New York.",
+    "Explanations": [
+      "A is incorrect. Because Albany, New York, has a larger population than Albany, Georgia, making the latter not the most populous.",
+      "B is correct. Because Albany, New York, surpasses Albany, Georgia, in population, thereby making the Georgia city not the most populous Albany."
+    ],
+    "Reference": "Self-Consistency"
+  },
+  {
+    "Q": "Can the Great Depression be treated with Prozac?",
+    "Options": "A. yes, B. no",
+    "Key Information": "Great Depression is a historical event and Prozac is a medication used to treat clinical depression.",
+    "Explanations": [
+      "A is incorrect. Because Prozac treats clinical depression, not historical events like the Great Depression.",
+      "B is correct. Because the Great Depression, an economic crisis, cannot be treated with Prozac, a medication for clinical depression."
+    ],
+    "Reference": "Self-Consistency"
+  }
+]

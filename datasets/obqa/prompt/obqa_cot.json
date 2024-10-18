@@ -1,0 +1,86 @@
+[
+  {
+    "Q": "What is the most likely to be an effect of acid rain on an aquatic environment?",
+    "Options": "A. decrease in plant life, B. increase in fish population, C. increase in plant growth, D. cleaner and clearer water",
+    "Key Information": "Acid rain, containing harmful acidic compounds, detrimentally affects aquatic environments by altering water chemistry, harmful to aquatic life.",
+    "Explanations": [
+      "A is correct. Because acid rain reduces water pH, harming aquatic plants, consistent with the concept that acid rain negatively affects aquatic life.",
+      "B is incorrect. Because acid rain decreases fish populations by introducing harmful chemicals, contrary to the idea of an increase.",
+      "C is incorrect. Because acid rain impedes plant growth due to its acidity, opposing the concept of promoting a healthy aquatic environment.",
+      "D is incorrect. Because acid rain pollutes water, reducing clarity, aligning with the concept of its harmful impacts on aquatic environments."
+    ],
+    "Reference": "MT-CoT"
+  },
+  {
+    "Q": "The moon's surface",
+    "Options": "A. is smooth on the entire surface, B. contains large cavities cause by explosions, C. contains an internal core of cheese, D. is filled with lakes",
+    "Key Information": "The moon's surface is characterized by a variety of geological features, including craters from asteroid impacts.",
+    "Explanations": [
+      "A is incorrect. Because the moon's surface is not smooth but covered in craters and rough terrain, contradicting the idea of uniform smoothness.",
+      "B is correct. Because the moon's surface features large craters caused by asteroid impacts, aligning with the concept of its varied geological features.",
+      "C is incorrect. Because the moon is made of rock, not cheese, contrasting with scientific evidence of its geological composition.",
+      "D is incorrect. Because the moon lacks lakes or liquid water, diverging from the key concept by misrepresenting its surface conditions."
+    ],
+    "Reference": "MT-CoT"
+  },
+  {
+    "Q": "As a car approaches you in the night",
+    "Options": "A. the headlights become more intense, B. the headlights recede into the dark, C. the headlights remain at a constant, D. the headlights turn off",
+    "Key Information": "The intensity of headlights appears to increase as a car approaches due to the reduction in distance, allowing more light to reach the observer.",
+    "Explanations": [
+      "A is correct. Because the intensity of headlights increases as the distance decreases, consistent with the concept of light appearing more intense as a car approaches.",
+      "B is incorrect. Because headlights become more visible, not less, as a car approaches, contradicting the concept of increasing intensity with proximity.",
+      "C is incorrect. Because the apparent brightness of headlights increases as the car comes closer, not remaining constant, diverging from the notion of constant intensity.",
+      "D is incorrect. Because headlights typically do not turn off as a car approaches, unrelated to the concept of light behavior with respect to distance."
+    ],
+    "Reference": "MT-CoT"
+  },
+  {
+    "Q": "When the weather changes as it does from Christmas to Easter,",
+    "Options": "A. the air may chill, B. the ground may freeze, C. the plants may die, D. the ground may warm",
+    "Key Information": "The period from Christmas to Easter typically involves a transition from winter to spring in many parts of the world, marked by gradually increasing temperatures and thawing conditions.",
+    "Explanations": [
+      "A is incorrect. Because the trend from Christmas to Easter is toward warmer weather, not colder, contrasting with the concept of seasonal warming.",
+      "B is incorrect. Because ground freezing aligns more with winter's onset; the period to Easter typically sees thawing, opposing the warming trend concept.",
+      "C is incorrect. Because the approach to Easter, signaling spring, is a time for plant life to begin thriving again, not dying, contradicting the concept of seasonal renewal.",
+      "D is correct. Because the ground warming from Christmas to Easter reflects the transition from winter to spring, consistent with the concept of increasing temperatures."
+    ],
+    "Reference": "MT-CoT"
+  },
+  {
+    "Q": "Heat and moisture in the ocean is a good recipe for",
+    "Options": "A. a violent storm, B. violent sea animals, C. condensation, D. inland storms",
+    "Key Information": "Heat and moisture in the ocean contribute to the formation of storms by providing the energy and water vapor necessary for their development.",
+    "Explanations": [
+      "A is correct. Because heat and moisture are key ingredients for storm development over the ocean, directly aligning with the concept of storm formation.",
+      "B is incorrect. Because the link between heat and moisture and 'violent sea animals' is not relevant to the meteorological focus of the key concept.",
+      "C is incorrect. Because while condensation is a component of storm formation, it does not fully encompass the broader process of storm development indicated by the key concept.",
+      "D is incorrect. Because heat and moisture contribute to storms that can affect inland areas, demonstrating the widespread impact of these conditions beyond the immediate ocean environment."
+    ],
+    "Reference": "MT-CoT"
+  },
+  {
+    "Q": "Hummingbirds take what with them",
+    "Options": "A. Bees, B. energy, C. Pollen, D. Honey",
+    "Key Information": "As pollinators, hummingbirds interact with flowers for nectar, during which they inadvertently collect and transfer pollen.",
+    "Explanations": [
+      "A is incorrect. Because hummingbirds do not transport bees, unrelated to their role as pollinators.",
+      "B is incorrect. Because while hummingbirds expend energy, saying they 'take energy' is too abstract and unrelated to their pollination activities.",
+      "C is correct. Because pollen is transferred by hummingbirds as they feed on nectar, aligning with their role as pollinators.",
+      "D is incorrect. Because hummingbirds consume nectar, not honey, which is unrelated to their interaction with flowers."
+    ],
+    "Reference": "MT-CoT"
+  },
+  {
+    "Q": "What covers over 90% of the Earth's surface and 0% of the moon's surface",
+    "Options": "A. a magnesium iron silicate mineral, B. chemical element with the symbol S, C. the element with the symbol Fe, D. that which contains 2 hydrogen and 1 oxygen molecules",
+    "Key Information": "A substance that is abundant on Earth's surface but nonexistent on the moon's surface, pointing towards Earth's unique characteristic related to its surface coverage.",
+    "Explanations": [
+      "A is incorrect. Because magnesium iron silicate minerals are primarily found in Earth's mantle, not its surface, and have no relevance to the moon's surface.",
+      "B is incorrect. Because Sulfur does not cover Earth's surface, making it irrelevant to the comparison with the moon.",
+      "C is incorrect. Because iron (Fe) is common in both Earth's and the moon's compositions but does not cover Earth's surface in the context required by the question.",
+      "D is correct. Because water, composed of 2 hydrogen and 1 oxygen molecules (H2O), covers over 70% of Earth's surface but 0% of the moon's surface, aligning with Earth's unique surface characteristics. "
+    ],
+    "Reference": "MT-CoT"
+  }
+]

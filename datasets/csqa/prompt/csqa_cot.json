@@ -1,0 +1,103 @@
+[
+  {
+    "Q": "What do people use to absorb extra ink from a fountain pen?",
+    "Options": "A. shirt pocket, B. calligrapher's hand, C. inkwell, D. desk drawer, E. blotter",
+    "Key Information": "People use a specific tool or material to absorb extra ink from a fountain pen.",
+    "Explanations": [
+      "A is incorrect. Because a shirt pocket may catch ink accidentally but is not used intentionally for absorbing extra ink from a fountain pen.",
+      "B is incorrect. Because a calligrapher's hand might contact with ink but is not used purposefully to absorb extra ink.",
+      "C is incorrect. Because an inkwell is for storing ink, not absorbing excess ink from a pen.",
+      "D is incorrect. Because a desk drawer is for storage, not specifically for absorbing excess ink.",
+      "E is correct. Because a blotter is designed to absorb excess ink, preventing smudges and keeping the writing area clean."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "What home entertainment equipment requires cable?",
+    "Options": "A. radio shack, B. substation, C. television, D. cabinet",
+    "Key Information": "Devices used for entertainment purposes within a home setting that necessitate a connection through a physical cable for operation or functionality",
+    "Explanations": [
+      "A is incorrect. Because radio shack refers to a place rather than a piece of home entertainment equipment requiring a cable.",
+      "B is incorrect. Because a substation pertains to electrical power distribution, not directly related to home entertainment or devices needing a cable in a home.",
+      "C is correct. Because televisions typically require a cable connection for signal reception, aligning with the key concept of home entertainment equipment needing a cable.",
+      "D is incorrect. Because a cabinet is used for storage and does not require a cable for home entertainment purposes, unrelated to the key concept."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "The fox walked from the city into the forest, what was it looking for?",
+    "Options": "A. pretty flowers, B. hen house, C. natural habitat, D. storybook",
+    "Key Information": "The motivations of a fox moving from an urban to a forest environment, focusing on natural instincts or necessities.",
+    "Explanations": [
+      "A is incorrect. Because Foxes seeking pretty flowers does not align with their instinctual needs for survival, such as food or shelter.",
+      "B is incorrect. Because a hen house, usually near human habitats, does not match the forest setting the fox is moving towards.",
+      "C is correct. Because the fox's migration to the forest implies a search for its natural habitat, indicating a pursuit of basic needs and instincts.",
+      "D is incorrect. Because a storybook, as a human creation, doesn't meet any of a fox's natural survival instincts in a forest setting."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Sammy wanted to go to where the people were. Where might he go?",
+    "Options": "A. populated areas, B. race track, C. desert, D. apartment, E. roadblock",
+    "Key Information": "Sammy seeks location that is likely to be frequented by or filled with individuals.",
+    "Explanations": [
+      "A is correct. Because populated areas naturally have many people, aligning with Sammy's goal.",
+      "B is incorrect. Because a race track may be crowded during events but doesn't consistently draw people, not fully aligning with Sammy's aim.",
+      "C is incorrect. Because deserts are sparsely populated and do not meet Sammy's desire to be around people.",
+      "D is incorrect. Because while an apartment indicates residence, it doesn't broadly represent a gathering place for many people.",
+      "E is incorrect. Because roadblocks might temporarily gather people but aren't places people intentionally seek for socializing."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Where do you put your grapes just before checking out?",
+    "Options": "A. mouth, B. grocery cart, C. super market, D. fruit basket, E. fruit market",
+    "Key Information": "One would place grapes in the immediate moments before proceeding to the checkout in a shopping context, as part of the  grocery purchasing process.",
+    "Explanations": [
+      "A is incorrect. Because putting grapes in one's mouth before checkout implies eating them before purchase, which is inappropriate.",
+      "B is correct. Because the grocery cart is used for holding items to be purchased, right before checking out.",
+      "C is incorrect. Because the supermarket is the overall shopping location, not where one places items immediately before checkout.",
+      "D is incorrect. Because a fruit basket is  typically for storing grapes at home, not for holding them just before checkout.",
+      "E is incorrect. Because the fruit market refers to the broader shopping venue, not the specific spot for grapes just before checkout."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Google Maps and other highway and street GPS services have replaced what?",
+    "Options": "A. United States, B. Mexico, C. countryside, D. atlas",
+    "Key Information": "There is a transition from traditional navigation tools to modern navigation tools, focusing on what has been predominantly replaced by digital mapping and GPS services in terms of functionality.",
+    "Explanations": [
+      "A is incorrect. Because the United States, being a country, cannot be replaced by digital mapping technologies.",
+      "B is incorrect. Because Mexico, as a country, cannot be replaced by digital mapping technologies, highlighting an incorrect match with navigation tools.",
+      "C is incorrect. Because the countryside, a type of geographic area, cannot be replaced by GPS services in the context of navigation tool replacement.",
+      "D is correct. Because an atlas, a book of maps, has been functionally replaced by digital mapping and GPS services, marking a shift in how people navigate."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "Before getting a divorce, what did the wife feel who was doing all the work?",
+    "Options": "A. harder, B. anguish, C. bitterness, D. tears, E. sadness",
+    "Key Information": "The emotional state of a wife who perceived imbalance of responsibilities before deciding on divorce, suggesting feelings stemming from stress, imbalance, or discontent.",
+    "Explanations": [
+      "A is incorrect. Because 'harder' refers to the level of effort, not an emotional state, and doesn't match the emotional context of imbalance leading to divorce.",
+      "B is incorrect. Because 'anguish' indicates severe distress, it may not fully capture the specific feelings of imbalance and discontent in this scenario.",
+      "C is correct. Because 'bitterness' accurately reflects feelings of anger and disappointment from unmet expectations and perceived imbalance, aligning with the scenario.",
+      "D is incorrect. Because 'tears' indicate a physical manifestation of emotions but do not specify the emotional state related to the feeling of being overburdened.",
+      "E is incorrect. Because 'sadness' is a general emotion that doesn't precisely convey the sense of being undervalued or the specific discontent that led to considering divorce."
+    ],
+    "Reference": "CoT"
+  },
+  {
+    "Q": "The man laid on the soft moss and looked up at the trees, where was the man?",
+    "Options": "A. Niagra Falls, B. forest, C. waterfall, D. ground, E. tree",
+    "Key Information": "The scenario describes a natural setting characterized by soft moss and an upward view of trees, suggesting a location where these features are prominent.",
+    "Explanations": [
+      "A is incorrect. Because Niagara Falls is primarily associated with its waterfalls, not a setting of soft moss and tree views.",
+      "B is correct. Because a forest offers both soft moss to lie on and numerous trees to look up at, matching the scenario's description.",
+      "C is incorrect. Because while waterfalls can be found in forests, the specific mention of laying on soft moss and looking up at trees directly suggests a broader environment than just the area near a waterfall.",
+      "D is incorrect. Because while the man is technically on the ground, it is too general and misses the specific natural characteristics implied by the details of soft moss and trees.",
+      "E is incorrect. Because the scenario describes  the man is looking up at trees, not situated in one, conflicting with the scenario given."
+    ],
+    "Reference": "Self-Consistency"
+  }
+]
