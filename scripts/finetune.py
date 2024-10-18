@@ -1,5 +1,4 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 SCRIPT_PATH = os.path.abspath(__file__)
 ROOT_PATH = os.path.abspath(os.path.join(SCRIPT_PATH, '../../'))
 import re
