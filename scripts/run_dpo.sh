@@ -12,7 +12,7 @@ TRAINING_PER_GPU_BATCH_SIZE=32
 LEARNING_RATE=0.000005
 GENERATION_PER_GPU_BATCH_SIZE=256
 GENERATION_TIMES=10
-DPO_ITERS=(3 4 5)
+DPO_ITERS=(1 2 3 4 5)
 
 # Function to extract the best checkpoint from trainer_state.json
 extract_best_checkpoint() {
