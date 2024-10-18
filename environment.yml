@@ -1,4 +1,4 @@
-name: test
+name: tinythinker
 channels:
   - anaconda
   - nvidia
