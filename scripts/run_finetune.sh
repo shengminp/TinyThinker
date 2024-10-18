@@ -2,8 +2,6 @@
 echo "### START DATE=$(date)"
 echo "### HOSTNAME=$(hostname)"
 echo "### CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
-source ~/.bashrc
-conda activate test
 
 data_names=("csqa")
 stage_types=("recall_summarize" "analyze_summarize")
