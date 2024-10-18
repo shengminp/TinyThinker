@@ -30,13 +30,11 @@ After installation, your project directory structure should look like this:
     |   │   ├── original                            # Original dataset  
     │   |   └── prompt                              # Designed prompt for prompt engineering
     │   ├── obqa
-    |   │   ├── final
-    |   │   ├── original
-    │   |   └── prompt
+    |   │   ...
+    │   |   └── same as aboe
     │   |── strategyqa
-    |   │   ├── final
-    |   │   ├── original
-    │   |   └── prompt
+    |   │   ...
+    │   |   └── same as above
     │   ├── openai_request.py                       # Sends requests and collects responses from OpenAI
     │   ├── Prepare Ablation.ipynb                  # Prepares data for ablation study
     │   ├── Prompt Engineering.ipynb                # Prepares dataset for training
