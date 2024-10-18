@@ -123,7 +123,7 @@ python generate.py \
 ```
 - **$base_name:** Model name ```(google-t5/t5-small, google-t5/t5-base, google-t5/t5-large, google-t5/t5-3b, google-t5/t5-11b)```.
 - **$data_name:** Dataset name ```(csqa, obqa, strategyqa)```.
-- **$type_name:** Phase type ```(sft, dpo)```.
+- **$training_type:** Phase type ```(sft, dpo)```.
 - **$stage_type:** Inference stage ```(recall, analyze, summarize, recall_summarize, analyze_summarize, recall_analyze, recall_analyze_summarize)```.
 - **$dpo_iter:** Iteration timestamp.
 - **$generation_type:** Generation type ```(greedy, random)```.
