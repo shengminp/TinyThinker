@@ -392,22 +392,6 @@ def generate_dpo_analyze_data(trainer, tokenizer, analyze_dataset, analyze_backu
             dpo_dataset_dict["rejected"].append(reject_pd_analyze)
 
             dpo_dataset_dict["GT"].append(chosen.GT)
-
-        
-        '''# This part is for all options analyze
-        options = sorted(re.findall(r'\(([A-Z])\)', recall))
-        for chosen, reject in zip(chosen_data.itertuples(), reject_data.itertuples()):
-            for option in options:
-                prompt = f"For option {option},"
-                chosen_analyze = _extract_prompt_analyze(chosen.analyze, prompt)
-                reject_analyze = _extract_prompt_analyze(reject.analyze, prompt)
-
-                if chosen_analyze and reject_analyze:
-                    dpo_dataset_dict["prompt"].append(f"{recall}\nAnalyze: {prompt}")
-                    dpo_dataset_dict["chosen"].append(chosen_analyze)
-                    dpo_dataset_dict["rejected"].append(reject_analyze)
-                    dpo_dataset_dict["GT"].append(chosen.GT)'''
-
     
     generated_analyze_dpo = [
         {"prompt": prompt, "chosen": chosen, "rejected": rejected}
