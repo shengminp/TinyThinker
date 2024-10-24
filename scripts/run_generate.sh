@@ -7,7 +7,7 @@ python generate.py \
     --base_model google-t5/t5-base \
     --data_name csqa \
     --training_type "dpo" \
-    --stage_type "knowledge_reasoning" \
+    --stage_type "recall_analyze" \
     --dpo_iter 5 \
     --checkpoint_dir "checkpoint-2730"\
     --per_gpu_batch_size 128 \
