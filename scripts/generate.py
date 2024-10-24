@@ -470,7 +470,6 @@ def parse_args():
     parser.add_argument('--base_model', type=str, required=True, help='Base model name')
     parser.add_argument('--data_name', type=str, required=True, help='Data name')
     parser.add_argument('--training_type', type=str, required=True, help='Training type')
-    parser.add_argument('--sample_ratio', choices=[0.0, 0.25, 0.5, 0.75], type=float, required=True, help='Sample ratio')
     parser.add_argument('--stage_type', choices=['recall', 'analyze', 'summarize', 'recall_summarize', 'analyze_summarize', 'recall_analyze', 'recall_analyze_summarize'], type=str, required=True, help='Stage type')
     parser.add_argument('--dpo_iter', type=int, default=0, help='DPO iteration')
     parser.add_argument('--checkpoint_dir', type=str, default=None, help='Checkpoint directory')
