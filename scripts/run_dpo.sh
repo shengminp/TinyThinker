@@ -6,7 +6,7 @@ echo "### CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 # Constants
 BASE_MODEL="google-t5/t5-small"
 DATA_NAME="strategyqa"
-STAGE_TYPE="knowledge_reasoning"
+STAGE_TYPE="recall_analyze"
 SFT_CHECKPOINT_DIR="checkpoint-4400"
 TRAINING_PER_GPU_BATCH_SIZE=32
 LEARNING_RATE=0.000005
