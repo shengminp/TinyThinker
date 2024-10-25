@@ -100,10 +100,6 @@ def setup_model_and_tokenizer(config):
     if "t5" in config.base_model:
         model = T5ForConditionalGeneration.from_pretrained(config.base_model)
         tokenizer = T5Tokenizer.from_pretrained(config.base_model, legacy=True)
-    '''elif "gpt2" in config.base_model:
-        model = GPT2LMHeadModel.from_pretrained(config.base_model)
-        tokenizer = AutoTokenizer.from_pretrained(config.base_model, padding_side='left', legacy=True)
-        tokenizer.pad_token = tokenizer.eos_token'''
     return model, tokenizer
 
 
@@ -122,27 +118,11 @@ def load_and_prepare_data(config, tokenizer, training_args):
             model_inputs = tokenizer(dataset["input"], padding=True)
         return model_inputs
     
-    '''def preprocess_function_clm(dataset):
-        if "analyze" in dataset.keys():
-            input_texts = [f"{i} {r}{tokenizer.eos_token}" for i, r in zip(dataset["input"], dataset["analyze"])]
-            model_inputs = tokenizer(input_texts)
-        elif "recall" in dataset.keys():
-            input_texts = [f"{i} {k}{tokenizer.eos_token}" for i, k in zip(dataset["input"], dataset["recall"])]
-            model_inputs = tokenizer(input_texts)
-        elif "summarize" in dataset.keys():
-            input_texts = [f"{i} {s} {tokenizer.eos_token}" for i, s in zip(dataset["input"], dataset["summarize"])]
-            model_inputs = tokenizer(input_texts)
-        else:
-            model_inputs = tokenizer(dataset["input"], padding='max_length', max_length=128)
-        return model_inputs'''
-    
     datasets = {split: load_dataset("json", data_files=path, split='train') for split, path in config.dataset_path.items()}
 
     with training_args.main_process_first():
         if "t5" in config.base_model:
             tokenized_datasets = {name: data.map(preprocess_function_seq2seq, batched=True) for name, data in datasets.items()}
-        '''elif "gpt2" in config.base_model:
-            tokenized_datasets = {name: data.map(preprocess_function_clm, batched=True) for name, data in datasets.items()}'''
 
     return tokenized_datasets
 
@@ -197,25 +177,6 @@ def run_sft(training_args, model, tokenizer, tokenized_datasets):
             tokenizer=tokenizer,
             compute_metrics=_compute_accuracy
         )
-    '''elif "gpt2" in config.base_model:
-        data_collator = DataCollatorForLanguageModeling(
-            tokenizer=tokenizer,
-            pad_to_multiple_of=8,
-            mlm=False
-        )
-        training_args.recall_generation_config.pad_token_id = tokenizer.pad_token_id
-        training_args.analyze_generation_config.pad_token_id = tokenizer.pad_token_id
-        training_args.summarize_generation_config.pad_token_id = tokenizer.pad_token_id
-
-        trainer = SFTTrainer(
-            model=model,
-            args=training_args,
-            data_collator=data_collator,
-            train_dataset=train_dataset_list,
-            eval_dataset=tokenized_datasets['valid'],
-            tokenizer=tokenizer,
-            compute_metrics=_compute_accuracy
-        )'''
 
     # Detecting last checkpoint.
     last_checkpoint = None
