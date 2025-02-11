@@ -110,11 +110,11 @@ def load_and_prepare_data(config, tokenizer, training_args):
     """
     def preprocess_function(dataset):
         if "analyze" in dataset.keys():
-            model_inputs = tokenizer(dataset["input"], text_target=dataset["analyze"], padding=True)
+            model_inputs = tokenizer(dataset["input"], text_target=dataset["analyze"])
         elif "recall" in dataset.keys():
-            model_inputs = tokenizer(dataset["input"], text_target=dataset["recall"], padding=True)
+            model_inputs = tokenizer(dataset["input"], text_target=dataset["recall"])
         elif "summarize" in dataset.keys():
-            model_inputs = tokenizer(dataset["input"], text_target=dataset["summarize"], padding=True)
+            model_inputs = tokenizer(dataset["input"], text_target=dataset["summarize"])
         else:
             model_inputs = tokenizer(dataset["input"], padding=True)
         return model_inputs
