@@ -407,7 +407,6 @@ def run_generation(training_args, model, tokenizer, tokenized_datasets):
     data_collator = DataCollatorForSeq2Seq(
         tokenizer=tokenizer,
         model=model,
-        pad_to_multiple_of=8,
         padding=True
     )
 
