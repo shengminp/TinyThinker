@@ -105,8 +105,6 @@ def setup_model_and_tokenizer(config):
     """
     Setup model and tokenizer based on training configuration.
     """
-    # Set seed before initializing model.
-    #set_seed(config.seed)
     model = T5ForConditionalGeneration.from_pretrained(config.checkpoint_dir)
     tokenizer = T5Tokenizer.from_pretrained(config.checkpoint_dir, legacy=True)
     model.eval()
