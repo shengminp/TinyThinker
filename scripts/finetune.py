@@ -111,13 +111,13 @@ def load_and_prepare_data(config, tokenizer, training_args):
     """
     def preprocess_function_seq2seq(dataset):
         if "analyze" in dataset.keys():
-            model_inputs = tokenizer(dataset["input"], text_target=dataset["analyze"], padding=True)
+            model_inputs = tokenizer(dataset["input"], text_target=dataset["analyze"])
         elif "recall" in dataset.keys():
-            model_inputs = tokenizer(dataset["input"], text_target=dataset["recall"], padding=True)
+            model_inputs = tokenizer(dataset["input"], text_target=dataset["recall"])
         elif "summarize" in dataset.keys():
-            model_inputs = tokenizer(dataset["input"], text_target=dataset["summarize"], padding=True)
+            model_inputs = tokenizer(dataset["input"], text_target=dataset["summarize"])
         else:
-            model_inputs = tokenizer(dataset["input"], padding=True)
+            model_inputs = tokenizer(dataset["input"])
         return model_inputs
     
     datasets = {split: load_dataset("json", data_files=path, split='train') for split, path in config.dataset_path.items()}
