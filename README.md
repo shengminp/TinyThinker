@@ -1,6 +1,7 @@
 # :thinking: TinyThinker
 
 Official code for "**TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"**
+[specific_framework.pdf](https://github.com/user-attachments/files/18745551/specific_framework.pdf)
 
 ## :bookmark_tabs: Table of Contents
 
