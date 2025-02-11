@@ -42,6 +42,8 @@ def setup_logger(config):
         per_device_train_batch_size=config.per_gpu_batch_size,
         per_device_eval_batch_size=config.per_gpu_batch_size * 4,
         learning_rate=config.learning_rate,
+        lr_scheduler_type="cosine",
+        warmup_ratio=0.1,
         num_train_epochs=config.num_train_epochs,
         log_level=config.log_level,
         logging_strategy=config.all_strategy,
